@@ -1,24 +1,53 @@
 
 .skip {
-    position: relative;
-    top: -40px;
-    display: none;
+    position: absolute;
+    left:-10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
-  .skip a:focus {
-    top: -40px;
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
   }
+/* Used W3 Schools for Skip Navigation */
 .topnav {
     overflow: hidden;
-    background-color: white;
+    background-color: #00274C;
 }
 .topnav a{
     float: center;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
 }
 .topnav-center{
     float: center;
+}
+.navcolor{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00274C;
+}
+ul {
+    list-style-type: disc;
+    text-align: center;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+li a:hover {
+    background-color: yellow;
+    color: black;
 }
 /*Googled above in W3 Schools*/
 .logo {
@@ -28,22 +57,47 @@
     width: 25%;
 }
 /*Googled above in W3 Schools*/
+
+
+body {
+    background-color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: black;
+}
 h1 {
     text-align: center;
     font-size: 30px;
     border: 3px solid black;
     border-style: dashed;
 }
-
-body {
-    background-color: blanchedalmond;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    color:black;
-}
 h2 {
     font-size: 20px;
     text-decoration: underline;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+ol {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .grid-container {
     display: grid;
